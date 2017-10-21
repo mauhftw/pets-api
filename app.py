@@ -12,6 +12,12 @@ app.config['JWT_AUTH_USERNAME_KEY'] = 'email'
 
 jwt = JWT(app, authenticate, identity)
 
+#GET /hello
+@app.route("/hello")
+def hello():
+    return "hello world!"
+
+
 #GET /pet
 @app.route("/pet")
 @jwt_required()
@@ -87,4 +93,4 @@ def delete_pet(id):
 	return jsonify({'message': 'oops! something went wrong'}),500
 
 
-app.run(host='0.0.0.0',port=5000)
+#app.run(host='0.0.0.0',port=5000)

@@ -1,6 +1,8 @@
+gunicorn
 flask
 flask-restful
 flask-jwt
 orator
 PyMySQL
 mysqlclient
+
