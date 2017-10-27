@@ -17,4 +17,4 @@ class CreateUsersTable(Migration):
         """
         Revert the migrations.
         """
-	self.schema.drop('pets')
+	self.schema.drop('users')

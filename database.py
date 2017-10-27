@@ -3,7 +3,7 @@ from orator import DatabaseManager, Model
 config = {
     'mysql': {
         'driver': 'mysql',
-        'host': 'localhost',
+        'host': 'mysql',
         'database': 'test',
         'user': 'root',
         'password': 'root',

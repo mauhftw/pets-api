@@ -9,7 +9,7 @@ class CreateUserSeeder(Seeder):
         """
 # see password hashing
         self.db.table('users').insert({
-            'email': 'admin@admin.com',
+        'email': 'admin@admin.com',
 	    'password': '123456',
         })
 

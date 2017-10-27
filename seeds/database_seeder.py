@@ -1,5 +1,5 @@
 from orator.seeds import Seeder
-from .create_pets_seed import CreatePetsSeed
+from create_pets_seeder import CreatePetsSeeder
 
 
 class DatabaseSeeder(Seeder):
@@ -8,4 +8,6 @@ class DatabaseSeeder(Seeder):
         """
         Run the database seeds.
         """
-	self.call(CreatePetsSeed)
+	self.call(CreatePetsSeeder)
+	self.call(CreateUserSeeder)
+

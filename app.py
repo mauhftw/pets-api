@@ -47,7 +47,7 @@ def store_pet():
 	pet = Pet()
 
 	exists = Pet.where('name','=',data['name'])
-	if exists:
+	if exists.__getattr__ is None:
 		return jsonify({'message': 'pet is already stored'}),404
 
 	pet.name = data['name']

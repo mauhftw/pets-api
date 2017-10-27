@@ -1,7 +1,7 @@
 from orator.seeds import Seeder
 
 
-class CreatePetsSeed(Seeder):
+class CreatePetsSeeder(Seeder):
 
     def run(self):
         """
@@ -9,8 +9,8 @@ class CreatePetsSeed(Seeder):
         """
         self.db.table('pets').insert({
             'name': 'john',
-	    'type': 'mammal',
-	    'specie': 'dog',
+            'type': 'mammal',
+            'specie': 'dog',
             'age': '13'
         })
 	

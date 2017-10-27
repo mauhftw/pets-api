@@ -1,7 +1,7 @@
 databases:
     mysql:
         driver: mysql
-        host: localhost
+        host: mysql
         database: test
         user: root
         password: 'root'

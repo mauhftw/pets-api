@@ -1,2 +1,3 @@
 *.pyc
 env/
+mysql.env
